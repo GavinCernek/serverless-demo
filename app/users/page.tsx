@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface User {
 	id: {
@@ -56,6 +57,7 @@ export default function Users() {
 			) : (
 				<p>No users returned.</p>
 			)}
+			<Link href="/">Go to Homepage</Link>
 		</main>
 	);
 }

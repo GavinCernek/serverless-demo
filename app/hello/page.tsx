@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Users() {
 	const [loading, setLoading] = useState<boolean>(true);
@@ -26,6 +27,7 @@ export default function Users() {
 	return (
 		<main style={{ margin: '0 auto', padding: '16px', maxWidth: '1440px' }}>
 			{message ? <p>{message}</p> : <p>No message was returned</p>}
+			<Link href="/">Go to Homepage</Link>
 		</main>
 	);
 }
